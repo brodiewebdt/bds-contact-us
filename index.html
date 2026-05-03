@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Our unique tag to identify the solution -->
+    <bds />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - BigDevSoon</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a href="#main" class="skip visually-hidden">Skip to main content</a>
+    <h1 class="visually-hidden">Contact Us challenge - BigDevSoon</h1>
+    <main id="main">
+      <div class="wrapper">
+        <div class="hero">
+          <div class="hero__text">
+            <h2 class="hero__title">Contact Us</h2>
+            <p class="hero__description">Get in touch with us! Whether you have questions, feedback, or just want to say hello, we're here for you.</p>
+
+            <div class="hero__marker">
+              <div class="hero__tooltip">
+                <p class="company">Windler, Lockman and McClure</p>
+                <p class="address">3629 N Cole Rd, Boise, Illinois</p>
+              </div>
+              <!-- /.hero__tooltip -->
+
+              <div class="indicator">
+                <img src="assets/images/Ellipse 29.svg" alt="" width="16" height="16" />
+                <img src="assets/images/Ellipse 28.svg" alt="" width="44" height="44" />
+                <img src="assets/images/Ellipse 27.svg" alt="" width="64" height="64" />
+              </div>
+              <!-- /.indicator -->
+            </div>
+            <!-- /.hero__marker -->
+          </div>
+          <!-- /.hero__text -->
+          <div class="hero__form">
+            <form class="contact__form">
+              <legend class="legend__title">Send us a Message</legend>
+              <div class="form-group">
+                <!-- First Name -->
+
+                <label class="visually-hidden" for="full-name">Name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Name" />
+                <p id="name-error" aria-live="polite"></p>
+              </div>
+              <!-- /.form-group -->
+
+              <!-- Email Section -->
+              <div class="form-group">
+                <label class="visually-hidden" for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address" placeholder="Email" />
+                <p id="email-error" aria-live="polite"></p>
+              </div>
+              <!-- /.form-group -->
+
+              <!-- Phone Section -->
+              <div class="form-group">
+                <label class="visually-hidden" for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone" />
+                <p id="phone-error" aria-live="polite"></p>
+              </div>
+              <!-- /.form-group -->
+
+              <!-- Query (Radios) Section -->
+              <fieldset class="query-type-group">
+                <legend class="legend__contact">Preferred contact method of communication</legend>
+
+                <div class="radios">
+                  <div class="form-group">
+                    <input id="general-inquiry" type="radio" name="query-type" checked />
+                    <label for="email-inquiry">Email</label>
+                  </div>
+                  <!-- /.form-group -->
+
+                  <div class="form-group">
+                    <input id="phone-inquiry" type="radio" name="query-type" />
+                    <label for="phone-inquiry">Phone</label>
+                  </div>
+                  <!-- /.form-group -->
+                </div>
+                <!-- /.radios -->
+
+                <p id="query-error" aria-live="polite"></p>
+              </fieldset>
+
+              <!-- Message Section -->
+              <label class="visually-hidden" for="message">Message</label>
+              <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+              <p id="message-error" aria-live="polite"></p>
+
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <!-- /.hero__form -->
+        </div>
+        <!-- /.hero -->
+      </div>
+      <!-- /.wrapper -->
+    </main>
+  </body>
+</html>
